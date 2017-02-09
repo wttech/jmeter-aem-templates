@@ -1,0 +1,22 @@
+	<template isTestPlan="true">
+        <name>AEM WebApplication Test Plan</name>
+        <fileName>aem-template.jmx </fileName>
+        <description><![CDATA[
+        <h1>AEM WebApplication Test Plan</h1>
+        <h2>Overview</h2>
+        <ul>
+            <li>Parametrization - re-used, preconfigured User Variables</li>        
+            <li>Tuned for AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works for AEM 6.2)</li>
+            <li>Preconfigured loggers - preconfigured Simple Data Writers for .csv, .xml and Influx database (for Live monitoring)</li>
+            <li>Think times with with parametrized Gaussian Random Timer</li>
+            <li>Test Profiles with User Defined Variables for different test environments</li>
+            <li>HTTP Request configured for download embedded resources, parallel download and filtering out calls to 3rd parties domains</li>
+            <li>Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers)</li>
+        </ul>
+        <br/>        
+        <h2>Useful links</h2>
+            <ul>
+                <li><a href="https://github.com/Cognifide/jmeter-aem-templates" >Cognifide Labs GitHub documentation</a></li>
+            </ul>
+        ]]></description>
+	</template>
