@@ -15,9 +15,10 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
     * Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers).
 
 # Prerequisites
-* JMeter 3.1
-* with plug-ins:
-  * Standard Set,
+* JMeter 3.1 (http://jmeter.apache.org/download_jmeter.cgi)
+* Plug-in Manager (https://jmeter-plugins.org/wiki/PluginsManager/)
+* Install plug-ins:
+  * 3 Basic Graphs,
   * 5 Additional Graphs,
   * Distribution/Percentile Graphs,
   
@@ -64,3 +65,6 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
 
 # References
 * JMeter http://jmeter.apache.org/
+
+# Contact
+lukasz.morawski@cognifide.com
