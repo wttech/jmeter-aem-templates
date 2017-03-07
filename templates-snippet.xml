@@ -6,6 +6,7 @@
         <h2>Overview</h2>
         <ul>
             <li>Parametrization - re-used, preconfigured User Variables</li>        
+			<li>Modularization using Module Controllers</li>        
             <li>Tuned for AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works for AEM 6.2)</li>
             <li>Preconfigured loggers - preconfigured Simple Data Writers for .csv, .xml and Influx database (for Live monitoring)</li>
             <li>Think times with with parametrized Gaussian Random Timer</li>

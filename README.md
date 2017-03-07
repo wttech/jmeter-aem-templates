@@ -6,6 +6,7 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
 
 # Main features
 * Parametrization - re-used, preconfigured User Variables,
+* Modularization using Module Controllers,
 * Tuned for Adobe AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works for AEM 6.2),
 * Preconfigured loggers - preconfigured Simple Data Writers for .csv, .xml and Influx database (for Live monitoring).
 * Other features:
@@ -29,7 +30,7 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
 * Test Plan element - with ${project} variable to be changed.
 * "Domains" User Defined Variables - Server related variables for each environment. Enable or disable appropriate one (e.g.: Domains STAGING to test staging).
 * "Variables" User Defined Variables - test profiles for LOAD, SOAK, STRESS tests with Thread and Time related variables. Enable or disable appropriate one. Data is exemplary and to be change in a project.
-* "Publish Tread" Group:
+* "Main Tread" Group:
     * ${thread} and ${rampup} variables used for Forever run.
     * HTTP Request Defaults element
         * with ${domain} and ${protocol} variables used
@@ -45,15 +46,18 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
         * uses ${think-time-deviation} and ${think-time-constant} variables
     * Throughput Controller
         * demonstrates hot to split users in percentage manner e.g.: New users vs Returning users
+		* Demonstrates usage of Module Controllers (reusable blocks of scripts)
         * HTTP Cache manager - simulating caching assets in browser
         * HTTP request Sampler
             * Response Assertion
         * Transaction Controller
             * Demonstrates how to embed multiple samples into one Transaction.
             * "Log in" POST request
-* "Activate Page EXAMPLE" Thread group
-    * Activates content from ${content-demo} variable using AEM etc/replication/treeactivation.html servlet
-    * Hits Author to push correct flow of invalidation: Author->Publish->Dispatcher
+* Modules Thread:
+	* implementation of modules.
+	* "Activate Page EXAMPLE" Thread group
+		* Activates content from ${content-demo} variable using AEM etc/replication/treeactivation.html servlet
+		* Hits Author to push correct flow of invalidation: Author->Publish->Dispatcher
 * Set of useful graphs that can be used to import .cvs result file and analyze test results.
 * Simple Data Writer CSV
     * Configured to write samples only to .csv file
