@@ -1055,11 +1055,13 @@
             <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
             <url>true</url>
             <fileName>true</fileName>
             <hostname>true</hostname>
             <threadCounts>true</threadCounts>
             <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
             <connectTime>true</connectTime>
           </value>
         </objProp>
