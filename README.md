@@ -13,7 +13,8 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
     * Think times with with parametrized Gaussian Random Timer,
     * Test Profiles with User Defined Variables for different test environments,
     * HTTP Request configured for download embedded resources, parallel download and filtering out calls to 3rd parties domains,
-    * Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers).
+    * Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers),
+	* User agents variability - in some cases it is important to test with different user agents (CDN caching algorithms that relay on user agent, mobile channels),
 
 # Prerequisites
 * JMeter 3.1 (http://jmeter.apache.org/download_jmeter.cgi)
@@ -39,6 +40,8 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
         * Filtering out 3rd party domains - Tab Advanced ".*${domain}.*" regular expression. No analitycs will be send.
     * Cookie Manager
         * Clears cookie each iteration
+	* CSV Config
+		* reads data from CSV file and passes to Header Manager (user-agent variable)
     * Header Manager
         * adds Host header with ${domain} variable
     * Gaussian Random Timer

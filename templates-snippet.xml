@@ -13,6 +13,7 @@
             <li>Test Profiles with User Defined Variables for different test environments</li>
             <li>HTTP Request configured for download embedded resources, parallel download and filtering out calls to 3rd parties domains</li>
             <li>Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers)</li>
+			<li>CSV Config reading user agents from text file</li>
         </ul>
         <br/>        
         <h2>Useful links</h2>
