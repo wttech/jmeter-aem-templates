@@ -10,7 +10,7 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
 * Tuned for Adobe AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works for AEM 6.2),
 * Preconfigured loggers - preconfigured Simple Data Writers for .csv, .xml and Influx database (for Live monitoring).
 * Other features:
-    * Think times with with parametrized Gaussian Random Timer,
+    * Think times with parametrized Gaussian Random Timer,
     * Test Profiles with User Defined Variables for different test environments,
     * HTTP Request configured for download embedded resources, parallel download and filtering out calls to 3rd parties domains,
     * Exemplary HTTP Requests (GET, POST) and Config Elements (Transaction and Throughput Controllers),
@@ -23,10 +23,10 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
   * 3 Basic Graphs,
   * 5 Additional Graphs,
   * Distribution/Percentile Graphs,
-  
+
 # Installing template  
 Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates file "\bin\templates\templates.xml". Remember to preserve correct XML syntax.
- 
+
 # All Features
 * Test Plan element - with ${project} variable to be changed.
 * "Domains" User Defined Variables - Server related variables for each environment. Enable or disable appropriate one (e.g.: Domains STAGING to test staging).
@@ -61,7 +61,7 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
 	* "Activate Page EXAMPLE" Thread group
 		* Activates content from ${content-demo} variable using AEM etc/replication/treeactivation.html servlet
 		* Hits Author to push correct flow of invalidation: Author->Publish->Dispatcher
-* Set of useful graphs that can be used to import .cvs result file and analyze test results.
+* Set of useful graphs that can be used to import .csv result file and analyze test results.
 * Simple Data Writer CSV
     * Configured to write samples only to .csv file
 * Simple Data Writer XML
