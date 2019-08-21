@@ -1043,7 +1043,7 @@
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${author}</stringProp>
-            <stringProp name="HTTPSampler.port">4502</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path"></stringProp>
