@@ -7,7 +7,7 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
 # Main features
 * Parametrization - re-used, preconfigured User Variables,
 * Modularization using Module Controllers,
-* Tuned for Adobe AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works for AEM 6.2),
+* Tuned for Adobe AEM - preconfigured thread that activates page on author (to replicate page via author-publish-dispatcher path). Thread also presents how to authenticate to AEM Author instance and reuse CSRF token (works with AEM 6.5),
 * Preconfigured loggers - preconfigured Simple Data Writers for .csv, .xml and Influx database (for Live monitoring).
 * Other features:
     * Think times with parametrized Gaussian Random Timer,
@@ -17,7 +17,7 @@ AEM JMeter template is a predefined Test Plan template, ready to use. Template a
 	* User agents variability - in some cases it is important to test with different user agents (CDN caching algorithms that relay on user agent, mobile channels),
 
 # Prerequisites
-* JMeter 3.1 (http://jmeter.apache.org/download_jmeter.cgi)
+* JMeter 5.1.1 (http://jmeter.apache.org/download_jmeter.cgi)
 * Plug-in Manager (https://jmeter-plugins.org/wiki/PluginsManager/)
 * Install plug-ins:
   * 3 Basic Graphs,
@@ -59,7 +59,7 @@ Copy .xml snippet from "templates-snippet.xml" and  paste into JMeter templates 
 * Modules Thread:
 	* implementation of modules.
 	* "Activate Page EXAMPLE" Thread group
-		* Activates content from ${content-demo} variable using AEM etc/replication/treeactivation.html servlet
+		* Activates content from ${content-demo} variable using AEM /libs/replication/treeactivation.html servlet
 		* Hits Author to push correct flow of invalidation: Author->Publish->Dispatcher
 * Set of useful graphs that can be used to import .csv result file and analyze test results.
 * Simple Data Writer CSV
