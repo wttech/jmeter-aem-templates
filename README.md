@@ -1,4 +1,4 @@
-![Cognifide logo](https://assets.cognifide.com/github/cognifide-logo.png)
+![WTT logo](docs/wtt-logo.png)
 ![JMeter logo](http://jmeter.apache.org/images/logo.svg)
 
 # Introduction
