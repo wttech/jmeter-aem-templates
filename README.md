@@ -1,4 +1,4 @@
-<img src="docs/white-vml-square.png" alt="VML Logo" width="150"/>
+![VML logo](docs/white-vml-square-small.png)
 ![JMeter logo](http://jmeter.apache.org/images/logo.svg)
 
 # Introduction
