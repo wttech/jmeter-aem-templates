@@ -1,4 +1,4 @@
-![WTT logo](docs/White VML square.png)
+![VML logo](docs/white-vml-square-small.png)
 ![JMeter logo](http://jmeter.apache.org/images/logo.svg)
 
 # Introduction
