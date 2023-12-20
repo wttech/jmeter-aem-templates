@@ -1,4 +1,4 @@
-<img src="docs/white-vml-square.png" alt="Wunderman Thompson Logo" width="150"/>
+<img src="docs/white-vml-square.png" alt="VML Logo" width="150"/>
 ![JMeter logo](http://jmeter.apache.org/images/logo.svg)
 
 # Introduction
